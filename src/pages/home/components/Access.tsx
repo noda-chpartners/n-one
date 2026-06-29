@@ -2,12 +2,12 @@ export default function Access() {
   return (
     <section id="access" className="py-16 md:py-24 px-4 md:px-6">
       <div className="max-w-[1280px] mx-auto">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-foreground-950">
+      <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-primary-500">
             ACCESS
           </h2>
-          <p className="text-foreground-400 text-sm md:text-base mt-3">
-            ニセコ町字曽我へのアクセス
+          <p className="text-foreground-800 font-bold text-base md:text-lg mt-1">
+            アクセス
           </p>
         </div>
 
@@ -31,12 +31,9 @@ export default function Access() {
           <div className="lg:w-[45%] flex flex-col justify-center">
             <div className="space-y-8">
               <div>
-                <span className="inline-block text-xs tracking-[0.2em] text-foreground-400 font-medium border border-foreground-300/40 rounded-full px-4 py-1.5 mb-4">
-                  LOCATION
-                </span>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <i className="ri-map-pin-2-fill text-accent-600 text-xl w-6 h-6 flex items-center justify-center"></i>
+                  <div className="w-12 h-12 rounded-xl bg-primary-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <i className="ri-map-pin-2-fill text-white text-xl w-6 h-6 flex items-center justify-center"></i>
                   </div>
                   <div>
                     <p className="text-foreground-400 text-xs tracking-wider mb-1.5">住所</p>
@@ -51,8 +48,8 @@ export default function Access() {
 
               <div className="border-t border-background-200 pt-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <i className="ri-train-fill text-accent-600 text-xl w-6 h-6 flex items-center justify-center"></i>
+                  <div className="w-12 h-12 rounded-xl bg-primary-500 flex items-center justify-center flex-shrink-0 mt-1">
+                    <i className="ri-train-fill text-white text-xl w-6 h-6 flex items-center justify-center"></i>
                   </div>
                   <div>
                     <p className="text-foreground-400 text-xs tracking-wider mb-1.5">最寄り駅</p>
@@ -60,21 +57,6 @@ export default function Access() {
                       JRニセコ駅
                     </p>
                     <p className="text-foreground-500 text-sm mt-1">駅から車で約5分</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="border-t border-background-200 pt-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <i className="ri-car-fill text-accent-600 text-xl w-6 h-6 flex items-center justify-center"></i>
-                  </div>
-                  <div>
-                    <p className="text-foreground-400 text-xs tracking-wider mb-1.5">お車の方</p>
-                    <p className="text-foreground-900 font-bold text-base md:text-lg">
-                      駐車スペースあり
-                    </p>
-                    <p className="text-foreground-500 text-sm mt-1">お気軽にお越しください</p>
                   </div>
                 </div>
               </div>
