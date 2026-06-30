@@ -15,7 +15,7 @@ export default function About() {
       <div className="relative max-w-[1280px] mx-auto">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -left-4 md:-left-8 lg:-left-12 top-1/2 -translate-y-1/2 z-0"
+          className="pointer-events-none absolute -left-4 md:-left-8 top-1/2 -translate-y-1/2 z-0"
         >
           <p
             className="font-heading font-bold tracking-tight text-[3rem] md:text-[4rem] lg:text-[5rem] leading-none tracking-[0.15em] text-primary-200 [writing-mode:vertical-rl] select-none"

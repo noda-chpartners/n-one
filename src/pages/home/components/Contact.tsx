@@ -1,5 +1,42 @@
+import { useRef, useEffect, useState } from 'react';
 import contact from '@/assets/contact.jpg';
 export default function Contact() {
+
+  function PhoneNumber() {
+    const ref = useRef<HTMLDivElement>(null);
+    const [visible, setVisible] = useState(false);
+    useEffect(() => {
+      const el = ref.current;
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => setVisible(true), 300);
+            observer.unobserve(el);
+          }
+        },
+        { threshold: 0.3, rootMargin: '0px 0px -5% 0px' }
+      );
+      observer.observe(el);
+      return () => observer.disconnect();
+    }, []);
+    return (
+      <div ref={ref} className="relative inline-block pb-1">
+        <span
+          aria-hidden="true"
+          className={`absolute bottom-1 left-0 z-0 block h-2 md:h-4 w-full bg-accent-300 origin-left pointer-events-none transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${visible ? 'scale-x-100' : 'scale-x-0'
+            }`}
+        />
+        <a
+          href="tel:06052994585"
+          className="relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold font-heading text-primary-500 hover:text-primary-400 transition-colors tracking-wide cursor-pointer"
+        >
+          060-5299-4585
+        </a>
+      </div>
+    );
+  }
+
   return (
     <section id="contact" className="relative py-20 md:py-32 px-4 md:px-6">
       <img
@@ -29,12 +66,7 @@ export default function Contact() {
           <div className="inline-flex flex-col sm:flex-row items-center px-4 md:px-8 py-6 md:py-8 mb-6 rounded-xl bg-white">
             <div>
               <p className="text-foreground-950 text-base tracking-wider mb-2">電話番号</p>
-              <a
-                href="tel:06052994585"
-                className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-primary-500 hover:text-primary-400 transition-colors tracking-wide cursor-pointer"
-              >
-                060-5299-4585
-              </a>
+              <PhoneNumber />
             </div>
           </div>
 
@@ -47,11 +79,11 @@ export default function Contact() {
         </div>
       </div>
       <div
-    aria-hidden="true"
-    className="pointer-events-none absolute -bottom-40 md:-bottom-32 left-1/2 -translate-x-1/2 z-10
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-40 md:-bottom-32 left-1/2 -translate-x-1/2 z-10
       w-[200%] md:w-[160%] h-44 md:h-44
       bg-primary-600 rounded-[50%]"
-  />
+      />
     </section>
   );
 }

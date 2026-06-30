@@ -30,12 +30,9 @@ export default function Home() {
       <ScrollReveal delay={100}>
         <Access />
       </ScrollReveal>
-      <ScrollReveal delay={100}>
         <Contact />
-      </ScrollReveal>   
-      <ScrollReveal delay={100}>
         <Footer />
-      </ScrollReveal>
+     
     </main>
   );
 }

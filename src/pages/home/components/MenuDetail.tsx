@@ -35,28 +35,29 @@ function PriceBlock({
         ref={ref}
         className="relative inline-flex items-baseline pb-2"
       >
+        {/* accent アンダーライン */}
+        <span
+          aria-hidden="true"
+          className={`absolute bottom-2 z-0 left-0 h-2 md:h-4 w-full bg-accent-300 origin-left transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+            visible ? 'scale-x-100' : 'scale-x-0'
+          }`}
+        />
+
         {price.includes('0') ? (
           <>
-            <span className="text-2xl md:text-4xl font-bold text-primary-500">
+            <span className="relative z-10 text-2xl md:text-4xl font-bold text-primary-500">
               {price}
             </span>
-            <span className="text-sm md:text-base font-bold text-foreground-600 ml-1">
+            <span className="relative z-10 text-sm md:text-base font-bold text-foreground-600 ml-1">
               円～
             </span>
           </>
         ) : (
-          <span className="text-2xl md:text-3xl font-bold text-primary-500">
+          <span className="relative z-10 text-2xl md:text-3xl font-bold text-primary-500">
             {price}
           </span>
         )}
 
-        {/* accent アンダーライン */}
-        <span
-          aria-hidden="true"
-          className={`absolute bottom-2  left-0 h-1 md:h-1.5 w-full rounded-full bg-accent-300 origin-left transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-            visible ? 'scale-x-100' : 'scale-x-0'
-          }`}
-        />
       </div>
     </div>
   );
