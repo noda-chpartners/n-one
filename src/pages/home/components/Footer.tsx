@@ -44,18 +44,18 @@ export default function Footer() {
               <div>
                 <p className="text-white/50 text-sm">TEL</p>
                 <a
-                  href="tel:06052994585"
+                  href="tel:09052994585"
                   className="text-white/80 text-sm font-bold hover:text-white transition-colors border-b border-white/20 pb-0.5"
                 >
-                  060-5299-4585
+                  090-5299-4585
                 </a>
               </div>
               <div>
                 <p className="text-white/30 text-xs tracking-[0.2em] font-medium mb-2 mt-6">ADDRESS</p>
                 <p className="text-white/50 text-sm leading-relaxed">
-                  〒048-1501
+                  〒048-1522
                   <br />
-                  北海道虻田郡ニセコ町字曽我
+                  北海道虻田郡ニセコ町字曽我397-8
                 </p>
               </div>
             </div>

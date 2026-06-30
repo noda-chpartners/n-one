@@ -7,8 +7,8 @@ const infoItems = [
   {
     icon: 'ri-phone-line',
     label: '電話番号',
-    value: '060-5299-4585',
-    href: 'tel:06052994585',
+    value: '090-5299-4585',
+    href: 'tel:09052994585',
     isLink: true,
   },
   

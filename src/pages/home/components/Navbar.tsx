@@ -83,7 +83,7 @@ export default function Navbar() {
           {/* 電話予約ボタン（最初のご提示コードのまま） */}
           <div className="hidden md:block">
             <a
-              href="tel:06052994585"
+              href="tel:09052994585"
               className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all duration-300 cursor-pointer border ${scrolled
                 ? 'bg-primary-500 text-white border-primary-500 hover:bg-primary-600'
                 : 'bg-primary-500 text-white border-primary-500 hover:bg-primary-600'
@@ -122,7 +122,7 @@ export default function Navbar() {
             ))}
             {/* モバイル用の電話予約ボタン（最初のご提示コードのまま） */}
             <a
-              href="tel:06052994585"
+              href="tel:09052994585"
               className="flex items-center justify-center gap-2 mt-2 py-3 px-5 bg-primary-500 text-white rounded-full text-sm font-bold"
             >
               <i className="ri-phone-line w-4 h-4 flex items-center justify-center"></i>

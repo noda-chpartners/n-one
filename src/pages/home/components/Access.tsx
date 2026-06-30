@@ -15,7 +15,7 @@ export default function Access() {
           <div className="lg:w-[55%]">
             <div className="rounded-2xl overflow-hidden h-[360px] md:h-[420px] border border-background-300/60">
               <iframe
-                src="https://maps.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E8%99%BB%E7%94%B0%E9%83%A1%E3%83%8B%E3%82%BB%E3%82%B3%E7%94%BA%E5%AD%97%E6%9B%BD%E6%88%91&t=m&z=14&output=embed&iwloc=near"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.8974021226127!2d140.65716659999998!3d42.832781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0aaf7a4db8115f%3A0x37f9aaa9b3121bd0!2z44Gh44KH44GE44Gh44KH44GEMg!5e0!3m2!1sja!2sjp!4v1782786151798!5m2!1sja!2sjp"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -38,9 +38,9 @@ export default function Access() {
                   <div>
                     <p className="text-foreground-400 text-xs tracking-wider mb-1.5">住所</p>
                     <p className="text-foreground-900 font-bold text-base md:text-lg leading-relaxed">
-                      〒048-1501
+                      〒048-1522
                       <br />
-                      北海道虻田郡ニセコ町字曽我
+                      北海道虻田郡ニセコ町字曽我397-8
                     </p>
                   </div>
                 </div>
